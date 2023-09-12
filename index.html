@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio von [Ihr Name]</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -20,19 +20,25 @@
 
     <section id="projects">
         <h2>Meine Projekte</h2>
-        <!-- Beispiel für ein Projekt -->
         <div class="project-card" onclick="showProjectDetails('project1')">
             <img src="images/project.jpg" alt="Projektbild">
             <h3>Projektname</h3>
             <p>Kurze Projektbeschreibung...</p>
         </div>
-        <!-- Weitere Projekte können hier hinzugefügt werden -->
+        <!-- Modal für Projektinformationen -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Projektname</h2>
+                <p>Detaillierte Projektbeschreibung...</p>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>Kontaktieren Sie mich unter: <a href="mailto:email@example.com">email@example.com</a></p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
